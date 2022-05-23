@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Config Medium";
+  src: url("../assets/config_rounded_fonts/ConfigRounded-Medium.otf");
+}
+
+@font-face {
+  font-family: "Londrina Solid Black";
+  src: url(../assets/Londrina_Solid/LondrinaSolid-Black.ttf);
+}
+
+@font-face {
+  font-family: "Londrina Solid";
+  src: url(../assets/Londrina_Solid/LondrinaSolid-Regular.ttf);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.test {
+  color: red;
+}
+
+.eco-bg-image {
+  position: absolute;
+  /* left: -100px; */
+  /* top: -35px; */
+  bottom: 0px;
+  right: 0px;
+  z-index: -10;
+  background: url(../assets/eco-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trees-image {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -10px;
+  z-index: 20;
+  background: url(../assets/trees2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.eco-bg1-image {
+  position: absolute;
+  left: 0px;
+  /* top: -30px; */
+  right: 0px;
+  z-index: 10;
+  background: url(../assets/eco-bg1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.factory-image {
+  position: absolute;
+  left: 0px;
+  /* top: -90px; */
+  right: 0px;
+  z-index: 10;
+  background: url(../assets/factory.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.small-factory-image {
+  position: absolute;
+  left: 0px;
+  /* top: -90px;  */
+  right: 0px;
+  top: -100px;
+  z-index: 10;
+  /* background: url(../assets/small-factory.svg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 878px) and (max-width: 1020px) {
+  .so-what-is-underline {
+    right: 0px;
+    transform: translate(-50%);
+  }
+}
+
+@media (max-width: 638px) {
+  .so-what-is-underline {
+    right: 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .so-what-is-underline {
+    right: 0px;
+    transform: translate(-50%);
+  }
+}
